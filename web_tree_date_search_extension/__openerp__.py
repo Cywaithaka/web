@@ -25,10 +25,6 @@
     'website': 'http://www.noviat.com',
     'license': 'AGPL-3',
     'category': 'Web',
-    'description': """
-    On the action context:
-    'dates_filter': ['start',...]
-    """,
     'depends': [
         'web',
     ],
