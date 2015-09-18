@@ -30,7 +30,6 @@
     ],
     'data': [
         'view/view.xml',
-        'demo/demo.xml',
     ],
     'qweb': [
         'static/src/xml/*.xml',
