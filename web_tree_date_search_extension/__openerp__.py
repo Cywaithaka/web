@@ -19,9 +19,9 @@
 ##############################################################################
 
 {
-    'name': 'Tree dates search extension ',
+    'name': 'Tree dates search extension',
     'version': '3.0',
-    'author': 'Noviat SA, Odoo Community Association (OCA)',
+    'author': 'Noviat, Odoo Community Association (OCA)',
     'website': 'http://www.noviat.com',
     'license': 'AGPL-3',
     'category': 'Web',
@@ -29,7 +29,7 @@
         'web',
     ],
     'data': [
-        'view/view.xml',
+        'views/assets_backend.xml',
     ],
     'qweb': [
         'static/src/xml/*.xml',

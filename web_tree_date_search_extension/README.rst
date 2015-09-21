@@ -15,6 +15,8 @@ On the action context:
 or several dates:
 {'dates_filter': ['start','stop',..]}
 
+.. image:: web_tree_date_search_extension/static/src/img/demo.png
+
 Credits
 =======
 
