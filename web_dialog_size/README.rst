@@ -5,6 +5,9 @@ A module that lets the user expand a dialog box to the full screen width.
 
 It is named web_dialog_size as it could be extended to propose other dialog size management feature.
 
+To auto extend when opening the wizard:
+Add context="{'web_dialog_extend':True}" on action.
+Add context="{'web_dialog_extend':True}" on the O2M/M2M form field.
 
 Bug Tracker
 ===========
@@ -23,6 +26,7 @@ Contributors
 
 * Anthony Muschang <anthony.muschang@acsone.eu>
 * Stéphane Bidoul <stephane.bidoul@acsone.eu>
+* Thomas Fossoul <thomas.fossoul@noviat.com>
 
 Maintainer
 ----------
