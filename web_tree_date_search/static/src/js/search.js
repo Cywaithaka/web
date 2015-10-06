@@ -138,14 +138,10 @@ openerp.web_tree_date_search = function(instance) {
             return tmp;
         },
         do_search: function(domain, context, group_by) {
-            this.last_domain = domain;
-            this.last_context = context;
-            this.last_group_by = group_by;
-
-            var arguments = this.search_by_selection();
-            return this._super.apply(this, arguments);
+            domain = this.search_by_selection(domain);
+            return this._super(domain, context, group_by);
         },
-        search_by_selection: function() {
+        search_by_selection: function(last_domain) {
             var domain = [];
             for (from in this.current_date_from){
                 if (this.current_date_from[from])
@@ -155,9 +151,7 @@ openerp.web_tree_date_search = function(instance) {
                 if (this.current_date_to[to])
                     domain.push([to, '<=', this.current_date_to[to]]);
             }
-            return [new instance.web.CompoundDomain(this.last_domain, domain),
-                    this.last_context,
-                    this.last_group_by];
+            return new instance.web.CompoundDomain(last_domain, domain);
         },
     });
 
