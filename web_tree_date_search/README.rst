@@ -1,7 +1,7 @@
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
     :alt: License
 
-Tree Date Search Extension
+Tree Date Search
 ==============================
 
 This module allow you to easily add dates range search fields on top of List View rows.
@@ -15,7 +15,8 @@ On the action context:
 or several dates:
 {'dates_filter': ['start','stop',..]}
 
-.. image:: web_tree_date_search_extension/static/src/img/demo.png
+.. image:: web_tree_date_search/static/src/img/demo.png
+.. image:: web_tree_date_search/static/src/img/demo1.png
 
 Credits
 =======
