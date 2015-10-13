@@ -20,7 +20,7 @@
 
 {
     'name': 'Tree dates search',
-    'version': '3.0',
+    'version': '8.0.3.0.0',
     'author': 'Noviat, Odoo Community Association (OCA)',
     'website': 'http://www.noviat.com',
     'license': 'AGPL-3',

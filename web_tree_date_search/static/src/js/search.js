@@ -131,13 +131,20 @@ openerp.web_tree_date_search = function(instance) {
                     }
                 }
                 else{
-                    $('.ui-toolbar:last').hide();
+                    // Only hide current if it's empty
+                    // Work from tree view to tree view with or withouth date_filters
+                    // Work from tree view to wizard with or withouth date_filters
+                    if ($('.ui-toolbar:last').children().length == 0)
+                        $('.ui-toolbar:last').hide();
                 }
                 this.tree_date_search_loaded = true;
             }
             return tmp;
         },
         do_search: function(domain, context, group_by) {
+            this.last_domain = domain;
+            this.last_context = context;
+            this.last_group_by = group_by;
             domain = this.search_by_selection(domain);
             return this._super(domain, context, group_by);
         },

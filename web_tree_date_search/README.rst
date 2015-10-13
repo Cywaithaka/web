@@ -10,7 +10,7 @@ These dates fields can be used in combination with the Search window.
 
 How to do ?
 
-On the action context:
+Add a new 'dates_filter' key and a list of fields name in the action context:
 {'dates_filter': ['start']}
 or several dates:
 {'dates_filter': ['start','stop',..]}
